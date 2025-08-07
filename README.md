@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Skybox Next: Entorno 3D Inmersivo con Modelos Animados
 
-## Getting Started
+## Descripción
+Este proyecto es una escena 3D inmersiva desarrollada con Next.js y Three.js, donde se exploran entornos tridimensionales usando skyboxes personalizados y modelos 3D animados. Permite visualizar varios personajes animados en un entorno realista, con controles de cámara e iluminación interactivos.
 
-First, run the development server:
+## Objetivo de aprendizaje
+- Aplicar conocimientos sobre entornos tridimensionales usando skyboxes y animaciones de modelos 3D.
+- Modularizar el código para mantenerlo limpio, reutilizable y profesional.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tecnologías utilizadas
+- **Next.js** (React)
+- **Three.js** (a través de @react-three/fiber y @react-three/drei)
+- **GLTF/GLB** para modelos 3D animados
+- **HDRI** para fondos realistas
+
+## Estructura del proyecto
+```
+components/
+  ├── ThreeScene.tsx        // Orquesta la escena principal
+  ├── ModelViewer.tsx       // Carga y anima modelos 3D
+  ├── CustomSkybox.tsx      // Aplica un fondo HDRI personalizado
+  └── SceneControls.tsx     // Controles de animación e iluminación
+public/
+  ├── model/                // Modelos 3D animados (GLB)
+  └── hdri/                 // Imágenes HDRI para el skybox
+app/
+  └── page.tsx              // Página principal que monta la escena
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instrucciones de uso
+1. **Instala dependencias:**
+   ```bash
+   npm install
+   ```
+2. **Ejecuta el proyecto en desarrollo:**
+   ```bash
+   npm run dev
+   ```
+3. **Abre en tu navegador:**
+   [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Controles de la escena
+- **Movimiento:** Pausar/Reanudar animación de los modelos.
+- **Iluminación:** Cambia entre 3 tipos de iluminación con los botones 1, 2 y 3.
+- **Cámara:** Usa el mouse para rotar, hacer zoom y mover la vista.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Recursos utilizados
+- **Modelos 3D:**
+  - Male Survivor 1, Male Survivor 2, Female Survivor 1, Female Survivor 2 (GLB)
+- **HDRI:**
+  - Oberer Kuhberg 2k (descargado de [Poly Haven](https://polyhaven.com/a/oberer_kuhberg))
 
-## Learn More
+## Créditos
+- Modelos y HDRI bajo licencia CC0 (dominio público).
+- Proyecto realizado por [Tu Nombre] como práctica de entornos 3D en React/Three.js.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+¡Explora, aprende y diviértete creando entornos 3D inmersivos!
