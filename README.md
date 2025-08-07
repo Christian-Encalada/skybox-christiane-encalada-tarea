@@ -52,7 +52,5 @@ app/
 
 ## Créditos
 - Modelos y HDRI bajo licencia CC0 (dominio público).
-- Proyecto realizado por [Tu Nombre] como práctica de entornos 3D en React/Three.js.
+- Proyecto realizado por Christian Encalada como práctica de entornos 3D en React/Three.js.
 
----
-¡Explora, aprende y diviértete creando entornos 3D inmersivos!
